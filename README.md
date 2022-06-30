@@ -32,10 +32,10 @@ func IsCurrentHostStateActive() bool {
 ...
 
 hostState, err = HostState()
-		if err != nil {
-			log.Errorf("Failed to get host state shared memory: %v", err)
-		}
+	if err != nil {
+		log.Errorf("Failed to get host state shared memory: %v", err)
+	}
 
-		if IsCurrentHostStateActive() {
+	if IsCurrentHostStateActive() {
     ...
 ```
