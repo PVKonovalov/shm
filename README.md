@@ -1,5 +1,6 @@
 # shm
-Accessing system shared memory from Go applications
+Accessing system shared memory from Go applications. I use it to share host state (ACTIVE or STANDBY) between SCADA applications running on the same host. This is required for compatibility with legacy modules.
+
 ## How to use
 ```Go
 var hostState unsafe.Pointer
